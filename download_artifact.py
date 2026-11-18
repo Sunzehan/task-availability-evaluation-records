@@ -13,13 +13,18 @@ def retrieve(name):
  req=urllib.request.Request(base+urllib.parse.quote(name)+'?download=true',headers={'User-Agent':'artifact-review-download'})
  with urllib.request.urlopen(req,timeout=60) as response:
   assert response.status==200 and urllib.parse.urlsplit(response.url).netloc=='anonymous.4open.science'
-  data=response.read(1024*1024+1)
-  assert len(data)<=1024*1024,'Unexpected oversized response'
-  return data
-m=json.loads(retrieve('ARCHIVE_PARTS.json'))
+  start=time.monotonic();data=bytearray()
+  while True:
+   block=response.read1(65536)
+   if not block:break
+   data.extend(block)
+   assert len(data)<=1024*1024,'Unexpected oversized response'
+   if time.monotonic()-start>90:raise TimeoutError('Per-file transfer deadline exceeded')
+  return bytes(data)
+raw_manifest=retrieve('ARCHIVE_PARTS.json');m=json.loads(raw_manifest)
 assert m['archive_name']=='anonymous_artifact_R6.zip' and len(m['parts'])<=128
 assert all(Path(x['name']).name==x['name'] and 0<x['bytes']<=512*1024 for x in m['parts'])
-(out/'ARCHIVE_PARTS.json').write_text(json.dumps(m,indent=2))
+(out/'ARCHIVE_PARTS.json').write_bytes(raw_manifest)
 def part(item):
  name=item['name'];p=out/name
  if p.exists() and p.stat().st_size==item['bytes'] and hashlib.sha256(p.read_bytes()).hexdigest()==item['sha256']:return name+' cached'
@@ -33,8 +38,15 @@ def part(item):
    last=e
    if attempt==0:time.sleep(2)
  raise RuntimeError('Download incomplete for '+name+'; rerun to keep already verified parts') from last
-with concurrent.futures.ThreadPoolExecutor(max_workers=max(1,min(a.jobs,4))) as pool:
- for done in pool.map(part,m['parts']):print(done,flush=True)
+pool=concurrent.futures.ThreadPoolExecutor(max_workers=max(1,min(a.jobs,4)))
+futures=[pool.submit(part,item) for item in m['parts']]
+try:
+ for future in concurrent.futures.as_completed(futures):print(future.result(),flush=True)
+except BaseException:
+ for future in futures:future.cancel()
+ pool.shutdown(wait=True,cancel_futures=True)
+ raise
+else:pool.shutdown(wait=True)
 archive=out/m['archive_name'];tmp=archive.with_name(archive.name+'.assembling');digest=hashlib.sha256();size=0
 with tmp.open('wb') as stream:
  for item in m['parts']:
