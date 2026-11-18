@@ -18,7 +18,7 @@ Use Python 3.10 or newer:
 ```sh
 python3 assemble_artifact.py
 python3 -m zipfile -e anonymous_artifact_R6.zip artifact
-cd artifact/anonymous_artifact_r6
+cd artifact/anonymous_artifact_R6
 python3 verify_all.py
 ```
 
