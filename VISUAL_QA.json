@@ -1,0 +1,21 @@
+{
+  "pages_rendered": 21,
+  "contact_sheets_inspected": 2,
+  "detail_pages_inspected": [
+    1,
+    4,
+    5,
+    6,
+    13,
+    15,
+    21
+  ],
+  "main_tables_readable": true,
+  "case_and_audit_tables_readable": true,
+  "no_clipping_or_overlap_observed": true,
+  "open_science_and_ethics_fit_half_page_each": true,
+  "status": "passed",
+  "anonymous_link_insertion_requires_final_recheck": true,
+  "pdf_sha256": "97456092f6e25bdb0348ea19eeafa1303f1aea29139edf88522903a308631284",
+  "all_pages_rerendered_after_final_text_edit": true
+}

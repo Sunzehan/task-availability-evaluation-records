@@ -1,0 +1,25 @@
+suite,task,policy,complete,source_effect_pattern,benchmark_pattern,strict,vetoed_effect_supported
+slack,user_task_1,veto,True,"[1, 1, 1, 0]","[1, 1, 1, 0]",True,True
+slack,user_task_1,neutral_veto,True,"[1, 1, 1, 0]","[1, 1, 1, 0]",True,True
+slack,user_task_1,quarantine_replan,False,"[1, 1, 1, None]","[1, 1, 1, None]",False,False
+slack,user_task_15,veto,True,"[1, 1, 1, 0]","[1, 1, 1, 0]",True,True
+slack,user_task_15,neutral_veto,True,"[1, 1, 1, 0]","[1, 1, 1, 0]",True,True
+slack,user_task_15,quarantine_replan,True,"[1, 1, 1, 0]","[1, 1, 1, 0]",True,False
+slack,user_task_17,veto,True,"[1, 1, 1, 0]","[1, 1, 1, 0]",True,True
+slack,user_task_17,neutral_veto,True,"[1, 1, 1, 0]","[1, 1, 1, 0]",True,True
+slack,user_task_17,quarantine_replan,True,"[1, 1, 1, 0]","[1, 1, 1, 0]",True,True
+slack,user_task_2,veto,False,"[1, None, 1, 0]","[1, None, 1, 0]",False,False
+slack,user_task_2,neutral_veto,True,"[1, 1, 1, 0]","[1, 1, 1, 0]",True,True
+slack,user_task_2,quarantine_replan,True,"[1, 1, 1, 0]","[1, 1, 1, 0]",True,True
+slack,user_task_3,veto,True,"[1, 1, 1, 0]","[1, 1, 1, 0]",True,False
+slack,user_task_3,neutral_veto,True,"[1, 1, 1, 0]","[1, 1, 1, 0]",True,True
+slack,user_task_3,quarantine_replan,True,"[1, 1, 1, 0]","[1, 1, 1, 0]",True,True
+slack,user_task_6,veto,True,"[1, 1, 1, 0]","[1, 1, 1, 0]",True,False
+slack,user_task_6,neutral_veto,True,"[1, 1, 1, 0]","[1, 1, 1, 0]",True,True
+slack,user_task_6,quarantine_replan,True,"[1, 1, 1, 0]","[1, 1, 1, 0]",True,False
+travel,user_task_0,veto,True,"[1, 1, 1, 0]","[1, 1, 1, 0]",True,True
+travel,user_task_0,neutral_veto,True,"[1, 1, 1, 0]","[1, 1, 1, 0]",True,True
+travel,user_task_0,quarantine_replan,True,"[1, 1, 1, 0]","[1, 1, 1, 0]",True,True
+travel,user_task_1,veto,True,"[1, 1, 1, 0]","[1, 1, 1, 0]",True,True
+travel,user_task_1,neutral_veto,True,"[1, 1, 1, 0]","[1, 1, 1, 0]",True,True
+travel,user_task_1,quarantine_replan,False,"[1, None, 1, 0]","[1, None, 1, 0]",False,False

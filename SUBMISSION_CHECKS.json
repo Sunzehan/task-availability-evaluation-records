@@ -1,0 +1,73 @@
+{
+  "requirements": {
+    "source": "https://asiaccs2027.cityu.edu.mo/call-for-papers/",
+    "verified_date": "2026-11-17",
+    "deadline": "2026-12-11 AoE",
+    "main_page_limit": 12,
+    "extra_page_limit": 10,
+    "open_science_limit": "half page after references",
+    "ethics_limit": "half page after references when applicable",
+    "all_authors_orcid_required": true,
+    "track": "AI Security"
+  },
+  "machine_checks": {
+    "main_pages": 11,
+    "bibliography_and_appendix_pages": 10,
+    "total_pages": 21,
+    "main_tables": 13,
+    "supplement_tables": 10,
+    "bibliography_entries": 26,
+    "baseline_R3_preserved": true,
+    "baseline_R4_preserved": true,
+    "all_new_numeric_rows_match_saved_outputs": true,
+    "no_overfull_or_undefined_reference_warnings": true,
+    "out_of_page_words": 0,
+    "pattern_scan_hits": {
+      "private_account": 0,
+      "gateway_name": 0,
+      "api_key": 0
+    },
+    "pdf_sha256": "97456092f6e25bdb0348ea19eeafa1303f1aea29139edf88522903a308631284",
+    "inference_calls_this_revision_pass": 0,
+    "baseline_R5_preserved": true,
+    "independent_human_review": false,
+    "status": "machine_and_visual_checks_passed"
+  },
+  "appendix_heading_bounds": {
+    "open_science_start_y": 83.896115,
+    "ethics_start_y": 311.666975,
+    "supplement_start_y": 546.28039,
+    "open_science_height_to_next_heading": 227.77085999999997,
+    "ethics_height_to_supplement": 234.61341500000003
+  },
+  "template_version": "acmart 2.21 (2026-11-01), matching CTAN on check date",
+  "template_source": "https://ctan.org/pkg/acmart",
+  "bibliography_primary_pages_checked": 26,
+  "bibliography_check_scope": "primary URL/title or repository/model identity; not all full-text claims",
+  "pdf_metadata": "Title:           Evaluating Payload-Dependent Task Loss in Adapted Agent Defenses\nSubject:         -  Security and privacy  ->  Software and application security.\nCreator:         LaTeX with acmart 2026/11/01 v2.21 Typesetting articles for the Association for Computing Machinery and hyperref 2022-02-21 v7.00n Hypertext links for LaTeX\nProducer:        XeTeX version 0.999994\nCreationDate:    Tue Nov 17 16:44:20 2026 CST\nCustom Metadata: no\nMetadata Stream: yes\nTagged:          no\nUserProperties:  no\nSuspects:        no\nForm:            none\nJavaScript:      no\nPages:           21\nEncrypted:       no\nPage size:       612 x 792 pts (letter)\nPage rot:        0\nFile size:       222956 bytes\nOptimized:       no\nPDF version:     1.5\n",
+  "ready_checks": [
+    "page limits",
+    "ACM sigconf anonymous review format",
+    "copyright/CCS/keywords retained",
+    "all tables parse and numeric audit matches",
+    "no overfull/undefined-reference warnings",
+    "all pages rendered; target pages visually inspected",
+    "author/gateway/key pattern scan",
+    "core records and replay correspondence",
+    "R5 preserved"
+  ],
+  "pending_before_submission": [
+    "persistent anonymous artifact URL and unauthenticated reviewer-access verification",
+    "author list/order, all ORCIDs and conflicts in HotCRP",
+    "final author approval and actual submission"
+  ],
+  "research_boundaries": [
+    "adapted gates remain main positives",
+    "no criterion-robust full released-path strict reversal established",
+    "source judgments remain author/AI inspections",
+    "fixed-request injected judge repeats unfinished"
+  ],
+  "paid_validation_48_started": false,
+  "judge_panel_120_started": false,
+  "status": "candidate_prepared_pending_hosting_and_author_submission_fields"
+}

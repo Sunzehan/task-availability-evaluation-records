@@ -6,7 +6,7 @@ Materials accompanying **Evaluating Payload-Dependent Task Loss in Adapted Agent
 
 - `paper_R6_2026-11-17.pdf`: current manuscript candidate.
 - `paper_source_R6.zip`: editable manuscript source.
-- `anonymous_artifact_R6.zip`: complete saved-record artifact, including historical configurations, the fresh 328-cell panel, core execution audits, scripts and manifests.
+- `anonymous_artifact_R6.zip.part00` through `.part06`, `ARCHIVE_PARTS.json` and `assemble_artifact.py`: losslessly split transport of the complete saved-record artifact, including historical configurations, the fresh 328-cell panel, core execution audits, scripts and manifests.
 - `CORE_FOUR_CELL_MATRIX.csv`: selected all-arm audit index.
 - JSON reports document manuscript, bibliography, visual and pattern checks at the R6 freeze.
 - `SHA256SUMS` and `RELEASE_MANIFEST.json`: transport integrity checks.
@@ -16,6 +16,7 @@ Materials accompanying **Evaluating Payload-Dependent Task Loss in Adapted Agent
 Use Python 3.10 or newer:
 
 ```sh
+python3 assemble_artifact.py
 python3 -m zipfile -e anonymous_artifact_R6.zip artifact
 cd artifact/anonymous_artifact_r6
 python3 verify_all.py

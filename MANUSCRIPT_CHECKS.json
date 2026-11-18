@@ -1,0 +1,23 @@
+{
+  "main_pages": 11,
+  "bibliography_and_appendix_pages": 10,
+  "total_pages": 21,
+  "main_tables": 13,
+  "supplement_tables": 10,
+  "bibliography_entries": 26,
+  "baseline_R3_preserved": true,
+  "baseline_R4_preserved": true,
+  "all_new_numeric_rows_match_saved_outputs": true,
+  "no_overfull_or_undefined_reference_warnings": true,
+  "out_of_page_words": 0,
+  "pattern_scan_hits": {
+    "private_account": 0,
+    "gateway_name": 0,
+    "api_key": 0
+  },
+  "pdf_sha256": "97456092f6e25bdb0348ea19eeafa1303f1aea29139edf88522903a308631284",
+  "inference_calls_this_revision_pass": 0,
+  "baseline_R5_preserved": true,
+  "independent_human_review": false,
+  "status": "machine_and_visual_checks_passed"
+}

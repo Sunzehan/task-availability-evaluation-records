@@ -1,0 +1,352 @@
+{
+  "summary": {
+    "references": 26,
+    "retrieved": 16,
+    "unresolved": [
+      "Safeguard-DoS",
+      "BreakingAgents",
+      "TRIAD",
+      "MELON",
+      "OpenAI-Guardrails",
+      "OpenHands",
+      "Qwen3Guard",
+      "PIGuard",
+      "ProtectAI",
+      "AgentWatcher"
+    ],
+    "title_mismatch_candidates": [],
+    "scope": "URL and displayed title metadata check only; not a fresh full-text claim or author/year validation",
+    "additional_primary_pages_verified_by_web_tool": 10,
+    "references_with_verified_primary_page": 26,
+    "remaining_primary_page_check": [],
+    "year_scope": "Preprints retain recorded initial-publication year; a later version date need not equal that year. No bibliographic field was changed.",
+    "parser_note": "The initial brace-only parser missed one valid quoted-field BibTeX entry; it was checked against the official ACL BibTeX and no manuscript entry changed."
+  },
+  "records": [
+    {
+      "key": "Safeguard-DoS",
+      "url": "https://arxiv.org/abs/2410.02916v3",
+      "bib_title": "{LLM Safeguard is a Double-Edged Sword: Exploiting False Positives for Denial-of-Service Attacks}",
+      "year": "2024",
+      "status": "unresolved_transport",
+      "error_type": "TimeoutError",
+      "fallback_verification": {
+        "method": "web tool primary-page retrieval",
+        "url": "https://arxiv.org/abs/2410.02916v3",
+        "displayed_title": "LLM Safeguard is a Double-Edged Sword: Exploiting False Positives for Denial-of-Service Attacks",
+        "match": "paper title or exact repository/model identifier verified",
+        "date": "2026-11-17"
+      }
+    },
+    {
+      "key": "MutedRAG",
+      "url": "https://arxiv.org/abs/2504.21680v1",
+      "bib_title": "{Hoist with His Own Petard: Inducing Guardrails to Facilitate Denial-of-Service Attacks on Retrieval-Augmented Generation of LLMs}",
+      "year": "2025",
+      "http_status": 200,
+      "final_url": "https://arxiv.org/abs/2504.21680v1",
+      "page_title": "Hoist with His Own Petard: Inducing Guardrails to Facilitate Denial-of-Service Attacks on Retrieval-Augmented Generation of LLMs",
+      "normalized_title_contained": true,
+      "status": "retrieved"
+    },
+    {
+      "key": "ShieldTarget",
+      "url": "https://arxiv.org/abs/2606.14517v2",
+      "bib_title": "{From Shield to Target: Denial-of-Service Attacks on LLM-Based Agent Guardrails}",
+      "year": "2026",
+      "http_status": 200,
+      "final_url": "https://arxiv.org/abs/2606.14517v2",
+      "page_title": "From Shield to Target: Denial-of-Service Attacks on LLM-Based Agent Guardrails",
+      "normalized_title_contained": true,
+      "status": "retrieved"
+    },
+    {
+      "key": "InfluenceAuthority",
+      "url": "https://arxiv.org/abs/2608.29942v1",
+      "bib_title": "{Influence Is Not Authority: When Causal Guardrail Signals Make Legitimate Tool Use Look Like an Attack in Tool-Using LLM Agents}",
+      "year": "2026",
+      "http_status": 200,
+      "final_url": "https://arxiv.org/abs/2608.29942v1",
+      "page_title": "Influence Is Not Authority: When Causal Guardrail Signals Make Legitimate Tool Use Look Like an Attack in Tool-Using LLM Agents",
+      "normalized_title_contained": true,
+      "status": "retrieved"
+    },
+    {
+      "key": "BreakingAgents",
+      "url": "https://aclanthology.org/2025.emnlp-main.1771/",
+      "bib_title": "Breaking Agents: Compromising Autonomous LLM Agents Through Malfunction Amplification",
+      "year": "2025",
+      "status": "quoted_BibTeX_fields_verified_via_web_tool",
+      "fallback_verification": {
+        "method": "web tool ACL Anthology primary metadata/BibTeX",
+        "url": "https://aclanthology.org/2025.emnlp-main.1771/",
+        "displayed_title": "Breaking Agents: Compromising Autonomous LLM Agents Through Malfunction Amplification",
+        "doi": "10.18653/v1/2025.emnlp-main.1771",
+        "date": "2026-11-17"
+      }
+    },
+    {
+      "key": "OverThink",
+      "url": "https://arxiv.org/abs/2502.02542v5",
+      "bib_title": "{OverThink: Slowdown Attacks on Reasoning LLMs}",
+      "year": "2025",
+      "http_status": 200,
+      "final_url": "https://arxiv.org/abs/2502.02542v5",
+      "page_title": "OverThink: Slowdown Attacks on Reasoning LLMs",
+      "normalized_title_contained": true,
+      "status": "retrieved"
+    },
+    {
+      "key": "OTora",
+      "url": "https://arxiv.org/abs/2605.08876v3",
+      "bib_title": "{OTora: A Unified Red Teaming Framework for Reasoning-Level Denial-of-Service in LLM Agents}",
+      "year": "2026",
+      "http_status": 200,
+      "final_url": "https://arxiv.org/abs/2605.08876v3",
+      "page_title": "OTora: A Unified Red Teaming Framework for Reasoning-Level Denial-of-Service in LLM Agents",
+      "normalized_title_contained": true,
+      "status": "retrieved"
+    },
+    {
+      "key": "BeyondMaxTokens",
+      "url": "https://arxiv.org/abs/2601.10955v2",
+      "bib_title": "{Beyond Max Tokens: Stealthy Resource Amplification via Tool Calling Chains in LLM Agents}",
+      "year": "2026",
+      "http_status": 200,
+      "final_url": "https://arxiv.org/abs/2601.10955v2",
+      "page_title": "Beyond Max Tokens: Stealthy Resource Amplification via Tool Calling Chains in LLM Agents",
+      "normalized_title_contained": true,
+      "status": "retrieved"
+    },
+    {
+      "key": "BASIS",
+      "url": "https://arxiv.org/abs/2608.08027v1",
+      "bib_title": "{BASIS: Breach-Aware Selective Prompt Injection Shielding with Prefill Attention Probes}",
+      "year": "2026",
+      "http_status": 200,
+      "final_url": "https://arxiv.org/abs/2608.08027v1",
+      "page_title": "BASIS: Breach-Aware Selective Prompt Injection Shielding with Prefill Attention Probes",
+      "normalized_title_contained": true,
+      "status": "retrieved"
+    },
+    {
+      "key": "TRIAD",
+      "url": "https://arxiv.org/abs/2606.05805v1",
+      "bib_title": "{From Risk Classification to Action Plan Remediation: A Guardrail Feedback Driven Framework for LLM Agents}",
+      "year": "2026",
+      "status": "unresolved_transport",
+      "error_type": "TimeoutError",
+      "fallback_verification": {
+        "method": "web tool primary-page retrieval",
+        "url": "https://arxiv.org/abs/2606.05805v1",
+        "displayed_title": "From Risk Classification to Action Plan Remediation: A Guardrail Feedback Driven Framework for LLM Agents",
+        "match": "paper title or exact repository/model identifier verified",
+        "date": "2026-11-17"
+      }
+    },
+    {
+      "key": "ICON",
+      "url": "https://arxiv.org/abs/2602.20708v1",
+      "bib_title": "{ICON: Indirect Prompt Injection Defense for Agents based on Inference-Time Correction}",
+      "year": "2026",
+      "http_status": 200,
+      "final_url": "https://arxiv.org/abs/2602.20708v1",
+      "page_title": "ICON: Indirect Prompt Injection Defense for Agents based on Inference-Time Correction",
+      "normalized_title_contained": true,
+      "status": "retrieved"
+    },
+    {
+      "key": "AgentDyn",
+      "url": "https://arxiv.org/abs/2602.03117v3",
+      "bib_title": "{AgentDyn: Are Your Agent Security Defenses Deployable in Real-World Dynamic Environments?}",
+      "year": "2026",
+      "http_status": 200,
+      "final_url": "https://arxiv.org/abs/2602.03117v3",
+      "page_title": "AgentDyn: Are Your Agent Security Defenses Deployable in Real-World Dynamic Environments?",
+      "normalized_title_contained": true,
+      "status": "retrieved"
+    },
+    {
+      "key": "AgentPI",
+      "url": "https://arxiv.org/abs/2602.10453v1",
+      "bib_title": "{The Landscape of Prompt Injection Threats in LLM Agents: From Taxonomy to Analysis}",
+      "year": "2026",
+      "http_status": 200,
+      "final_url": "https://arxiv.org/abs/2602.10453v1",
+      "page_title": "The Landscape of Prompt Injection Threats in LLM Agents: From Taxonomy to Analysis",
+      "normalized_title_contained": true,
+      "status": "retrieved"
+    },
+    {
+      "key": "AgentDojo",
+      "url": "https://arxiv.org/abs/2406.13352v3",
+      "bib_title": "{AgentDojo: A Dynamic Environment to Evaluate Prompt Injection Attacks and Defenses for LLM Agents}",
+      "year": "2024",
+      "http_status": 200,
+      "final_url": "https://arxiv.org/abs/2406.13352v3",
+      "page_title": "AgentDojo: A Dynamic Environment to Evaluate Prompt Injection Attacks and Defenses for LLM Agents",
+      "normalized_title_contained": true,
+      "status": "retrieved"
+    },
+    {
+      "key": "LlamaFirewall",
+      "url": "https://arxiv.org/abs/2505.03574v1",
+      "bib_title": "{LlamaFirewall: An open source guardrail system for building secure AI agents}",
+      "year": "2025",
+      "http_status": 200,
+      "final_url": "https://arxiv.org/abs/2505.03574v1",
+      "page_title": "LlamaFirewall: An open source guardrail system for building secure AI agents",
+      "normalized_title_contained": true,
+      "status": "retrieved"
+    },
+    {
+      "key": "VIGIL",
+      "url": "https://arxiv.org/abs/2601.05755v2",
+      "bib_title": "{VIGIL: Defending LLM Agents Against Tool Stream Injection via Verify-Before-Commit}",
+      "year": "2026",
+      "http_status": 200,
+      "final_url": "https://arxiv.org/abs/2601.05755v2",
+      "page_title": "VIGIL: Defending LLM Agents Against Tool Stream Injection via Verify-Before-Commit",
+      "normalized_title_contained": true,
+      "status": "retrieved"
+    },
+    {
+      "key": "AGrail",
+      "url": "https://arxiv.org/abs/2502.11448v2",
+      "bib_title": "{AGrail: A Lifelong Agent Guardrail with Effective and Adaptive Safety Detection}",
+      "year": "2025",
+      "http_status": 200,
+      "final_url": "https://arxiv.org/abs/2502.11448v2",
+      "page_title": "AGrail: A Lifelong Agent Guardrail with Effective and Adaptive Safety Detection",
+      "normalized_title_contained": true,
+      "status": "retrieved"
+    },
+    {
+      "key": "ActGuard",
+      "url": "https://arxiv.org/abs/2609.14987v1",
+      "bib_title": "{ActGuard: Pre-execution Action Auditing against Indirect Prompt Injection in LLM Agents}",
+      "year": "2026",
+      "http_status": 200,
+      "final_url": "https://arxiv.org/abs/2609.14987v1",
+      "page_title": "ActGuard: Pre-execution Action Auditing against Indirect Prompt Injection in LLM Agents",
+      "normalized_title_contained": true,
+      "status": "retrieved"
+    },
+    {
+      "key": "MELON",
+      "url": "https://arxiv.org/abs/2502.05174v4",
+      "bib_title": "{MELON: Provable Defense Against Indirect Prompt Injection Attacks in AI Agents}",
+      "year": "2025",
+      "status": "unresolved_transport",
+      "error_type": "URLError",
+      "fallback_verification": {
+        "method": "web tool primary-page retrieval",
+        "url": "https://arxiv.org/abs/2502.05174v4",
+        "displayed_title": "MELON: Provable Defense Against Indirect Prompt Injection Attacks in AI Agents",
+        "match": "paper title or exact repository/model identifier verified",
+        "date": "2026-11-17"
+      }
+    },
+    {
+      "key": "Progent",
+      "url": "https://arxiv.org/abs/2504.11703v3",
+      "bib_title": "{Progent: Securing AI Agents with Privilege Control}",
+      "year": "2025",
+      "http_status": 200,
+      "final_url": "https://arxiv.org/abs/2504.11703v3",
+      "page_title": "Progent: Securing AI Agents with Privilege Control",
+      "normalized_title_contained": true,
+      "status": "retrieved"
+    },
+    {
+      "key": "OpenAI-Guardrails",
+      "url": "https://github.com/openai/openai-guardrails-python",
+      "bib_title": "{OpenAI Guardrails — Python}",
+      "year": null,
+      "status": "unresolved_transport",
+      "error_type": "TimeoutError",
+      "fallback_verification": {
+        "method": "web tool primary-page retrieval",
+        "url": "https://github.com/openai/openai-guardrails-python",
+        "displayed_title": "OpenAI Guardrails - Python",
+        "match": "paper title or exact repository/model identifier verified",
+        "date": "2026-11-17"
+      }
+    },
+    {
+      "key": "OpenHands",
+      "url": "https://github.com/OpenHands/software-agent-sdk",
+      "bib_title": "{Software Agent SDK}",
+      "year": null,
+      "status": "unresolved_transport",
+      "error_type": "URLError",
+      "fallback_verification": {
+        "method": "web tool primary-page retrieval",
+        "url": "https://github.com/OpenHands/software-agent-sdk",
+        "displayed_title": "software-agent-sdk",
+        "match": "paper title or exact repository/model identifier verified",
+        "date": "2026-11-17"
+      }
+    },
+    {
+      "key": "Qwen3Guard",
+      "url": "https://huggingface.co/Qwen/Qwen3Guard-Gen-4B",
+      "bib_title": "{Qwen3Guard-Gen-4B}",
+      "year": null,
+      "status": "unresolved_transport",
+      "error_type": "URLError",
+      "fallback_verification": {
+        "method": "web tool primary-page retrieval",
+        "url": "https://huggingface.co/Qwen/Qwen3Guard-Gen-4B",
+        "displayed_title": "Qwen/Qwen3Guard-Gen-4B",
+        "match": "paper title or exact repository/model identifier verified",
+        "date": "2026-11-17"
+      }
+    },
+    {
+      "key": "PIGuard",
+      "url": "https://huggingface.co/leolee99/PIGuard",
+      "bib_title": "{PIGuard}",
+      "year": null,
+      "status": "unresolved_transport",
+      "error_type": "URLError",
+      "fallback_verification": {
+        "method": "web tool primary-page retrieval",
+        "url": "https://huggingface.co/leolee99/PIGuard",
+        "displayed_title": "leolee99/PIGuard",
+        "match": "paper title or exact repository/model identifier verified",
+        "date": "2026-11-17"
+      }
+    },
+    {
+      "key": "ProtectAI",
+      "url": "https://huggingface.co/protectai/deberta-v3-base-prompt-injection-v2",
+      "bib_title": "{deberta-v3-base-prompt-injection-v2}",
+      "year": null,
+      "status": "unresolved_transport",
+      "error_type": "URLError",
+      "fallback_verification": {
+        "method": "web tool primary-page retrieval",
+        "url": "https://huggingface.co/protectai/deberta-v3-base-prompt-injection-v2",
+        "displayed_title": "protectai/deberta-v3-base-prompt-injection-v2",
+        "match": "paper title or exact repository/model identifier verified",
+        "date": "2026-11-17"
+      }
+    },
+    {
+      "key": "AgentWatcher",
+      "url": "https://arxiv.org/abs/2604.01194v2",
+      "bib_title": "{AgentWatcher: A Rule-based Prompt Injection Monitor}",
+      "year": "2026",
+      "status": "unresolved_transport",
+      "error_type": "URLError",
+      "fallback_verification": {
+        "method": "web tool primary-page retrieval",
+        "url": "https://arxiv.org/abs/2604.01194v2",
+        "displayed_title": "AgentWatcher: A Rule-based Prompt Injection Monitor",
+        "match": "paper title or exact repository/model identifier verified",
+        "date": "2026-11-17"
+      }
+    }
+  ]
+}
