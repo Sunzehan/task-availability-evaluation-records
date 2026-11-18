@@ -6,10 +6,20 @@ Materials accompanying **Evaluating Payload-Dependent Task Loss in Adapted Agent
 
 - `paper_R6_2026-11-17.pdf`: current manuscript candidate.
 - `paper_source_R6.zip`: editable manuscript source.
-- `anonymous_artifact_R6.zip.part00` through `.part06`, `ARCHIVE_PARTS.json` and `assemble_artifact.py`: losslessly split transport of the complete saved-record artifact, including historical configurations, the fresh 328-cell panel, core execution audits, scripts and manifests.
+- `anonymous_artifact_R6.zip.part00` through `.part97`, `ARCHIVE_PARTS.json` and `assemble_artifact.py`: losslessly split 512-KiB transport of the complete saved-record artifact, including historical configurations, the fresh 328-cell panel, core execution audits, scripts and manifests.
 - `CORE_FOUR_CELL_MATRIX.csv`: selected all-arm audit index.
 - JSON reports document manuscript, bibliography, visual and pattern checks at the R6 freeze.
 - `SHA256SUMS` and `RELEASE_MANIFEST.json`: transport integrity checks.
+
+## Download and resume
+
+The anonymous host may reset long transfers and does not support byte-range resume. Download the small parts and assemble the original archive with:
+
+```sh
+python3 download_artifact.py
+```
+
+This makes public file requests, verifies every part, and reuses verified parts when rerun. It does not require login, model keys or paid inference. The default is two concurrent requests. Then extract `artifact_download/anonymous_artifact_R6.zip` and run the offline checks below. A full repository ZIP is optional.
 
 ## Offline verification
 
